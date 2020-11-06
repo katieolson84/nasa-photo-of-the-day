@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     const dataFetcher= ()=> {
       axios
-      .get(`https://api.nasa.gov/planetary/apod?api_key=MUpuYcxc4k65kf8cVr2wxiRt7TOQaAZZXRhbuStl&date=2020-11-05`)
+      .get(`https://api.nasa.gov/planetary/apod?api_key=MUpuYcxc4k65kf8cVr2wxiRt7TOQaAZZXRhbuStl&`)
       .then(res => {
         setNasaData(res.data)
       })
