@@ -45,33 +45,36 @@ const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 20vh;
   
   .mainContainer{
     width: 70%;
     display: flex;
     align-content: center;
     justify-content: center;
-    border: 1px red solid;
-    border: 20px solid #F3E081;
-    margin: 4%;
+    border: 1rem solid #F3E081;
+    margin: 1rem;
   }
   
   .title {
     width: 100%;
     background-color: #F95B48;
-    font-size: 1.4rem;
-    border: 20px solid #F8A84C;
+    border: .8rem solid #F8A84C;
     display: flex;
   }
 
   h1{
-    padding: 1%;
+    padding: 1rem;
     margin: 0%;
-    font-size: 5rem;
+    font-size: calc(1rem + 4vw);
     font-family: 'Geo', sans-serif;
     color: white;
     width: 100%;
     text-align: center;
+  }
+  @media (min-height: 768px){
+    .mainContainer{
+    width: 80%;
   }
 `
 

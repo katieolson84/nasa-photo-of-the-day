@@ -12,25 +12,22 @@ const ExplanationData = (props) => {
     )
 }
 const StyledExplanation = styled.div`
-    width: 70%;
+    width: 80%;
     display: flex;
     align-content: center;
     justify-content: center;
-    border: 1px red solid;
-    border: 20px solid #F3E081;
-    margin: 4%;
+    border: 1rem solid #F3E081;
+    margin: 1rem;
     
     .textContainer{
         width: 100%;
-        padding: 4%;
+        padding: 1rem;
         text-align: center;
         background-color: #F95B48;
         color: white;
         line-height: 1.5;
-        font-size: 1.4rem;
-        border: 20px solid #F8A84C;
-        
-       
+        font-size: 1rem;
+        border: .8rem solid #F8A84C;
     }
 `
 

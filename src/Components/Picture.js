@@ -17,24 +17,29 @@ const Picture = (props) => {
 }
 const StyledPicture = styled.div`
     font-family: 'Rock Salt', cursive;
-    font-size: 2rem;
     align-self: center;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 30vh;
     
     .imageContainer{
         background-color: white;
-        width: 50%;
+        width: 80%;
         border-radius: 2px;
         box-shadow: 5px 5px 7px rgba(0,0,0,0.6);
+        min-height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .image{
         position: relative;
         width: 90%;
-        margin-top: 2.8rem;
+        margin-top: 2rem;
         border-radius: 2px;
         
     }
@@ -44,18 +49,22 @@ const StyledPicture = styled.div`
     }
 
     .imgTitle{
-        width: 100%;
-        text-align: center;
-        font-size: 2rem;
+        width: 95%;
+        font-size: calc(.8rem + 1vw);
     }
 
     .date{
-    width: 100%;
-    font-size: 1.5rem;
-    color: black;
-    padding-bottom: .5%;
+        width: 100%;
+        font-size: calc(.6rem + 1vw);
+        color: black;
+        padding: 0rem 0rem .5rem 0rem;
     }
-    
-    
+
+    @media screen and (min-width: 768px){
+        .imageContainer{
+        width: 50%;
+        }
+    }
+     
 `
-export default Picture
+export default Picture;
