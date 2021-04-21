@@ -45,7 +45,7 @@ const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 20vh;
+  min-height: 10vh;
   
   .mainContainer{
     width: 70%;
@@ -53,7 +53,7 @@ const StyledContainer = styled.div`
     align-content: center;
     justify-content: center;
     border: 1rem solid #F3E081;
-    margin: 1rem;
+    margin: .5rem;
   }
   
   .title {
@@ -64,7 +64,7 @@ const StyledContainer = styled.div`
   }
 
   h1{
-    padding: 1rem;
+    padding: .5rem;
     margin: 0%;
     font-size: calc(1rem + 4vw);
     font-family: 'Geo', sans-serif;

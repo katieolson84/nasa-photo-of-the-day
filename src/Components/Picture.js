@@ -24,6 +24,7 @@ const StyledPicture = styled.div`
     align-items: center;
     justify-content: center;
     min-height: 30vh;
+    padding: 0;
     
     .imageContainer{
         background-color: white;
@@ -50,14 +51,13 @@ const StyledPicture = styled.div`
 
     .imgTitle{
         width: 95%;
-        font-size: calc(.8rem + 1vw);
+        font-size: calc(.8rem + .5vw);
     }
 
     .date{
         width: 100%;
-        font-size: calc(.6rem + 1vw);
+        font-size: calc(.7rem + .5vw);
         color: black;
-        padding: 0rem 0rem .5rem 0rem;
     }
 
     @media screen and (min-width: 768px){
